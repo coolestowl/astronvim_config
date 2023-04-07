@@ -7,7 +7,8 @@ return {
             "github/copilot.vim",
             lazy = false,
             init = function() vim.g.copilot_proxy = "localhost:1087" end
-        }
+        }, {"tpope/vim-fugitive", lazy = false},
+        {"rbong/vim-flog", lazy = false}
     },
     polish = function()
         vim.o.autoread = true
